@@ -999,7 +999,13 @@
             { name: '限量版球鞋', value: 2000, rarity: 'rare', size: 3, type: 'loot' },
             { name: '奢侈品包包', value: 3000, rarity: 'rare', size: 4, type: 'loot' },
             { name: '稀有邮票册', value: 2200, rarity: 'rare', size: 2, type: 'loot' },
-            { name: '纯金纪念币', value: 8000, rarity: 'legendary', size: 2, type: 'loot' }
+            { name: '纯金纪念币', value: 8000, rarity: 'legendary', size: 2, type: 'loot' },
+            { name: '威士忌', value: 12000, rarity: 'legendary', size: 2, type: 'loot' },
+            { name: '复苏呼吸机', value: 100000, rarity: 'legendary', size: 2, type: 'loot' },
+            { name: 'ECMO（体外膜肺氧合器）', value: 80000, rarity: 'legendary', size: 2, type: 'loot' },
+            { name: '非洲之星', value: 130000, rarity: 'legendary', size: 2, type: 'loot' },
+            { name: '海洋之泪', value: 220000, rarity: 'legendary', size: 2, type: 'loot' },
+            { name: '便携军用雷达', value: 215000, rarity: 'legendary', size: 2, type: 'loot' }
         ];
         
         // 特殊物品：能量球
@@ -1517,8 +1523,7 @@
             radiationMapObjects.obstacles.push(
                 { x: cleanRoomX - 120, y: cleanRoomY - 120, width: 240, height: 25, isCleanRoom: true },
                 { x: cleanRoomX - 120, y: cleanRoomY + 95, width: 240, height: 25, isCleanRoom: true },
-                { x: cleanRoomX - 120, y: cleanRoomY - 120, width: 25, height: 240, isCleanRoom: true },
-                { x: cleanRoomX + 95, y: cleanRoomY - 120, width: 25, height: 240, isCleanRoom: true }
+                { x: cleanRoomX - 120, y: cleanRoomY - 120, width: 25, height: 240, isCleanRoom: true }
             );
             radiationMapObjects.cleanRooms.push({
                 x: cleanRoomX,
@@ -1694,7 +1699,6 @@
                 { x: 3000, y: 3000 },
                 { x: CONFIG.MAP_WIDTH - 3000, y: 3000 },
                 { x: 3000, y: CONFIG.MAP_HEIGHT - 3000 },
-                { x: CONFIG.MAP_WIDTH - 3000, y: CONFIG.MAP_HEIGHT - 3000 }
             ];
             entrancePositions.forEach((pos, idx) => {
                 // 入口建筑围墙
